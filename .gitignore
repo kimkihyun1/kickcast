@@ -1,0 +1,27 @@
+# 비밀 정보: 환경 변수 파일은 올리지 않는다
+.env
+.env.*
+# 단, 빈 값 템플릿은 공유해야 하므로 예외로 둔다
+!.env.example
+
+# 파이썬 실행 시 자동으로 생기는 캐시
+__pycache__/
+*.py[cod]
+
+# 가상환경 폴더
+.venv/
+venv/
+env/
+
+# macOS가 자동으로 만드는 파일
+.DS_Store
+
+# AWS 자격 증명 파일
+.aws/
+credentials
+*.pem
+
+# Terraform 상태 파일: 인프라 정보와 비밀 값이 담길 수 있다
+*.tfstate
+*.tfstate.*
+.terraform/
